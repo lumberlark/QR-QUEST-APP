@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-QUEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="setting">
+            <div class="input-wrap">
+                <label for="data">Data</label>
+                <textarea  id="data" class="input-1x">https://github.com</textarea>
+            </div>
+            <div class="input-wrap">
+                <label for="size">Size</label>
+                <input type="range" id="size" min="10" max="30" value="1" class="input-1x">
+            </div>
+            <div class="input-wrap">
+                <label for="logo">Logo</label>
+                <input type="file" id="logo" hidden>
+            <div class="input-2x">
+                    <button id="clear" type="button">Clear</button>
+                </div>
+            <div class="input-wrap">
+                <label for="margin">Margin</label>
+                <input type="range" id="margin" min="1" max="30" class="input-1x">
+            </div>
+            <div class="input-wrap">
+                <label for="dot">Dot Mode</label>
+                <select id="dot" class="input-1x">
+                    <option value="square">Square</option>
+                    <option value="dots">Dots</option>
+                    <option value="rounded">Rounded</option>
+                    <option value="Extra-Rounded">Extra Rounded</option>
+                    <option value="classy">Classy</option>
+                    <option value="Classy-rounded">Classy Rounded</option>
+                </select>
+            </div>
+            <div class="input-wrap">
+                <label for="dot-color">Dot Color</label>
+                <input type="color" id="dot-color-1" class="input-2x">
+                <input type="color" id="dot-color-2" class="input-2x">
+            </div>
+            <div class="input-wrap">
+                <label for="bg-color">BG Color</label>
+                <input type="color" id="bg-color" class="input-2x">
+            </div>
+        </div>
+    </div>
+    <div class="display">
+        <div id="canvas">
+            <p>300px x 300px</p>
+            <button class="btn-download" id="btn-dl" type="button">Download</button>
+        </div>
+    </div>
+</body>
+</html>
