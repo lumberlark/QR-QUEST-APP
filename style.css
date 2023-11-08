@@ -7,25 +7,51 @@
     font-family: Poppins;
 }
 
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(to right,rgb(243, 226, 226),rgb(247, 218, 207),lightgray),rgb(243, 226, 226);
+}
+
+nav{
+    padding: 10px;
+}
+
+nav h2{
+    padding: 0;
+    margin: 0;
+    margin-left: 46%;
+}
+
+h2::first-letter{
+    font-size: 200%;
+}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: dimgray;
+    background: radial-gradient(white,white,gray);
 }
+
 
 .container{
     background-color: white;
+    border: 1px solid gray;
     border-radius: 5px;
     padding:30px 15px 30px 30px;
     text-align: center;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
 }
 
 .setting{
     padding-right:15px;
     min-width: 380px;
+    font-weight: 700;
 }
 
 .input-wrap{
@@ -33,6 +59,7 @@ body{
     display: flex;
     text-align: left;
     padding-bottom: 10px;
+    
 }
 
 .input-1x{
@@ -59,7 +86,7 @@ textarea, select, input, button{
 }
 
 select, textarea{
-    border: 1px solid ghostwhite;
+    border: 1px solid gray;
     border-radius: 5px;
     padding: 5px;
 }
@@ -79,4 +106,18 @@ button{
     padding: 10px;
     cursor: pointer;
     width: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgb(84, 83, 83);
+    width: 100%;
+}
+
+h5{
+    margin: 0;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
