@@ -12,7 +12,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background:linear-gradient(to right,rgb(243, 226, 226),rgb(247, 218, 207),lightgray),rgb(243, 226, 226);
+    background:linear-gradient(to right,rgb(221, 205, 205),rgb(247, 218, 207),lightgray),rgb(243, 226, 226);
 }
 
 nav{
@@ -31,6 +31,7 @@ h2::first-letter{
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -39,6 +40,7 @@ body{
 
 
 .container{
+    position: relative;
     background-color: white;
     border: 1px solid gray;
     border-radius: 5px;
@@ -46,6 +48,7 @@ body{
     text-align: center;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
+    
 }
 
 .setting{
@@ -108,8 +111,63 @@ button{
     width: 100%;
 }
 
+section{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+}
+
+.example {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* Split the section into two columns */
+    gap: 20px; /* Add some space between the columns */
+    justify-content: center;
+    text-align: left; /* Align text to the left in the left column */
+    background: white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.example-img img,
+.mars-QR img {
+    max-width: 100%; /* Make the images fill their container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.example-img,
+.mars-QR {
+    text-align: center; /* Center-align the images */
+}
+
+.mars-QR{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+ul {
+    padding: 5px; /* Remove default padding */
+    list-style:circle;
+    text-align: left; /* Align list items to the left */
+    margin-left: 5%;
+}
+
+img {
+    position: relative;
+    max-width: 40%; 
+    height: auto; /* Maintain the image's aspect ratio */
+    right: 0;
+    top: 0;
+}
+
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     color: white;
     background-color: rgb(84, 83, 83);
