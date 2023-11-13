@@ -172,7 +172,7 @@ img {
 .custom-link {
     text-decoration: none;
     font-size: 1.2em;
-    color: #4CAF50;
+    color: #27ac2c;
     font-weight: bold;
     transition: color 0.1s ease;
     border-bottom: 2px solid #4CAF50;
@@ -213,7 +213,7 @@ h5{
     }
 
     .container {
-        padding: 10px; /* Adjust the container padding for smaller screens */
+        padding: 1px; /* Adjust the container padding for smaller screens */
         text-align: center; /* Center the content in the container */
         position: static;
         margin-top: 17%;
@@ -251,15 +251,13 @@ h5{
         margin-bottom: 30px;
         margin-left: auto; /* Center the example section horizontally */
         margin-right: auto; /* Center the example section horizontally */
-        padding: 20px; /* Add padding to increase the size inside the container */
-        
+        padding: 20px; /* Add padding to increase the size inside the container */ 
     }
 
 
     .mars-QR {
         max-width: 100%; /* Make the Mars QR code image fill its container */
         margin-left: 0; /* Remove margin on the left for smaller screens */
-        
     }
 
     ul {
@@ -273,5 +271,7 @@ h5{
 
     body{
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
+
 }

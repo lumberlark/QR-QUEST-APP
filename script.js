@@ -99,11 +99,12 @@ logoE1.addEventListener('change', e=>{
     reader.readAsDataURL(file);
 });
 
+
+dlEl.addEventListener('click', e=>{
+    qrCode.download({name:'qr', extension:'svg'})
+});
+
 clearE1.addEventListener('click', e=>{
     delete op.image;
     render();
-});
-
-dlEl.addEventListener('click', e=>{
-    qrCode.download({name:'qr', extension:'png'})
 });
