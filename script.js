@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
     dotsOptions: {
       color: "#4267b2",
-      type: "rounded",
+      type: "squared",
       gradient: {
         type: "linear",
         colorStops: [
