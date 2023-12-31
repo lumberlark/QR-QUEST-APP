@@ -1,277 +1,327 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: Poppins;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background:linear-gradient(to right,rgb(221, 205, 205),rgb(247, 218, 207),lightgray),rgb(243, 226, 226);
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #5b71fd,
+    #203378
+  ); /* Night sky background for the header */
+  border-bottom: 2px solid linear-gradient(#e0e8ee, #dbe7f2);
+  z-index: 2; /* Ensure the header is above the moonlight effect */
 }
 
-nav{
-    padding: 10px;
+#goBack {
+  background-color: transparent;
+  border: 1px black;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
 }
 
-nav h2{
-    padding: 0;
-    margin: 0;
-    margin-left: 46%;
+#goBack:hover {
+  font-size: 25.2px;
+  text-decoration: underline;
+  color: #feb8cf;
 }
 
-h2::first-letter{
-    font-size: 200%;
+nav h2 {
+  padding: 0;
+  margin: 0;
+  margin-left: 46%;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100svh;
-    background: radial-gradient(white,white,gray);
+h2::first-letter {
+  font-size: 200%;
 }
 
-
-.container{
-    position: relative;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding:30px 15px 30px 30px;
-    text-align: center;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
-    
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #0c1445,
+    #03091e
+  ); /* Night sky background for the body */
 }
 
-.setting{
-    padding-right:15px;
-    min-width: 380px;
-    font-weight: 700;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  ); /* Radial gradient for moonlight effect on the container */
+  pointer-events: none; /* Ensure the moonlight overlay doesn't interfere with content */
 }
 
-.input-wrap{
-    align-items: flex-start;
-    display: flex;
-    text-align: left;
-    padding-bottom: 10px;
-    
+.container {
+  position: relative;
+  margin-top: 1%;
+  color: black;
+  background-color: rgb(241, 238, 238);
+  border-radius: 10px;
+  padding: 30px 15px 30px 30px;
+  text-align: center;
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(255, 255, 255, 0.2) inset; /* Inset box shadow for a subtle reflection effect */
+  transform: translateZ(0);
+  overflow: hidden;
+  text-decoration: underline;
 }
 
-.input-1x{
-    width: 100%;
+.setting {
+  padding-right: 15px;
+  min-width: 380px;
+  font-weight: 700;
 }
 
-.input-2x{
-    width: 50%;
+.input-wrap {
+  align-items: flex-start;
+  display: flex;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
-label{
-    width: 30%;
+.input-1x {
+  width: 100%;
 }
 
-.display{
-    width: 100%;
+.input-2x {
+  width: 50%;
 }
 
-textarea, select, input, button{
-    border: none;
-    resize: none;
-    font-family: Poppins;
-    font-size: 1rem;
+label {
+  width: 30%;
 }
 
-select, textarea{
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 5px;
+.display {
+  width: 100%;
 }
 
-input[type='range']{
-    accent-color: #e91e63;
+textarea,
+select,
+input,
+button {
+  border: none;
+  resize: none;
+  font-family: Poppins;
+  font-size: 1rem;
 }
 
-button{
-    cursor: pointer;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(233, 30, 99);
+select,
+textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.btn-download{
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
+input[type="range"] {
+  accent-color: #e91e63;
 }
 
-section{
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 50%;
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(233, 30, 99);
+}
+
+.btn-download {
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
 }
 
 .example {
-    display: grid;
-    grid-template-columns: repeat(3,1fr); /* Split the section into two columns */
-    gap: 20px; /* Add some space between the columns */
-    justify-content: center;
-    text-align: left; /* Align text to the left in the left column */
-    background: white;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
-    margin-top: 2%;
-    border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Split the section into two columns */
+  gap: 20px; /* Add some space between the columns */
+  justify-content: center;
+  text-align: left; /* Align text to the left in the left column */
+  background: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 70px 4px;
+  margin-top: 2%;
+  border-radius: 10px;
 }
 
 .example-img img,
 .mars-QR img {
-    max-width: 100%; /* Make the images fill their container */
-    height: auto; /* Maintain the image's aspect ratio */
+  max-width: 100%; /* Make the images fill their container */
+  height: auto; /* Maintain the image's aspect ratio */
 }
 
 .example-img,
 .mars-QR {
-    text-align: center; /* Center-align the images */
+  text-align: center; /* Center-align the images */
 }
 
-.mars-QR{
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-    text-align: center;
-    justify-content: center;
-    margin-left: 20%;
-    height: auto;
+.mars-QR {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20%;
+  height: auto;
 }
 
 ul {
-    padding: 5px; /* Remove default padding */
-    list-style:circle;
-    text-align: left; /* Align list items to the left */
-    margin-left: 5%;
-    line-height: 1.6;
-    text-decoration: underline;
+  padding: 5px; /* Remove default padding */
+  list-style: circle;
+  text-align: left; /* Align list items to the left */
+  margin-left: 5%;
+  line-height: 1.6;
+  text-decoration: underline;
 }
 
 img {
-    position: relative;
-    max-width: 100%; 
-    height: auto; /* Maintain the image's aspect ratio */
-    right: 0;
-    top: 0;
+  position: relative;
+  max-width: 100%;
+  height: auto; /* Maintain the image's aspect ratio */
+  right: 0;
+  top: 0;
 }
 
 .custom-link {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #27ac2c;
-    font-weight: bold;
-    transition: color 0.1s ease;
-    border-bottom: 2px solid #4CAF50;
-    padding-top: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #27ac2c;
+  font-weight: bold;
+  transition: color 0.1s ease;
+  border-bottom: 2px solid #4caf50;
+  padding-top: 10px;
 }
 
 .custom-link:hover {
-    color: #5b805d;
-    border-bottom: 2px solid #45a049;
+  color: #5b805d;
+  border-bottom: 2px solid #45a049;
 }
 
-
-footer{
-    position: fixed;
-    bottom: 0;
-    color: white;
-    background-color: rgb(84, 83, 83);
-    width: 100%;
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: rgb(84, 83, 83);
+  width: 100%;
 }
 
-h3{
-    text-decoration: underline;
+h3 {
+  text-decoration: underline;
 }
 
-h5{
-    margin: 0;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h5 {
+  margin: 0;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 100%; /* Adjust the font size for smaller screens */
-    }
+  h2 {
+    font-size: 100%; /* Adjust the font size for smaller screens */
+  }
 
-    nav h2 {
-        margin-left: 0; /* Center the navigation header on smaller screens */
-    }
+  nav h2 {
+    margin-left: 3%; /* Center the navigation header on smaller screens */
+  }
 
-    .container {
-        padding: 1px; /* Adjust the container padding for smaller screens */
-        text-align: center; /* Center the content in the container */
-        position: static;
-        margin-top: 17%;
-        display: flex;
-        flex-direction: column;
-    }
+  .container {
+    padding: 1px; /* Adjust the container padding for smaller screens */
+    text-align: center; /* Center the content in the container */
+    position: static;
+    margin-top: 17%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .setting {
-        padding-right: 0; /* Remove padding on the right for smaller screens */
-    }
+  #data {
+    width: 250px;
+  }
 
-    .input-wrap {
-        flex-direction: column; /* Stack input elements vertically on smaller screens */
-        align-items: center; /* Center align input elements */
-    }
+  .setting {
+    padding-right: 0; /* Remove padding on the right for smaller screens */
+  }
 
-    .input-1x,
-    .input-2x {
-        width: 50%; /* Make input fields full width on smaller screens */
-        justify-content: center;
-        text-align: center;
-    }
+  .input-wrap {
+    flex-direction: column; /* Stack input elements vertically on smaller screens */
+    align-items: center; /* Center align input elements */
+  }
 
-    label {
-        width: 100%; /* Make labels full width on smaller screens */
-        text-align: center; /* Center align labels */
-        margin-bottom: 5px; /* Add some space between labels */
-    }
+  .input-1x,
+  .input-2x {
+    width: 50%; /* Make input fields full width on smaller screens */
+    justify-content: center;
+    text-align: center;
+  }
 
-    .example {
-        grid-template-columns: 1fr; /* Display examples in a single column on smaller screens */
-        text-align: center; /* Center align text in examples */
-        width: 100%; /* Adjust the width to make it a bit larger */
-        max-width: 800px; /* Set a maximum width if needed */
-        margin-bottom: 30px;
-        margin-left: auto; /* Center the example section horizontally */
-        margin-right: auto; /* Center the example section horizontally */
-        padding: 20px; /* Add padding to increase the size inside the container */ 
-    }
+  label {
+    width: 100%; /* Make labels full width on smaller screens */
+    text-align: center; /* Center align labels */
+    margin-bottom: 5px; /* Add some space between labels */
+  }
 
+  .example {
+    grid-template-columns: 1fr; /* Display examples in a single column on smaller screens */
+    text-align: center; /* Center align text in examples */
+    width: 100%; /* Adjust the width to make it a bit larger */
+    max-width: 800px; /* Set a maximum width if needed */
+    margin-bottom: 30px;
+    margin-left: auto; /* Center the example section horizontally */
+    margin-right: auto; /* Center the example section horizontally */
+    padding: 20px; /* Add padding to increase the size inside the container */
+  }
 
-    .mars-QR {
-        max-width: 100%; /* Make the Mars QR code image fill its container */
-        margin-left: 0; /* Remove margin on the left for smaller screens */
-    }
+  .mars-QR {
+    max-width: 100%; /* Make the Mars QR code image fill its container */
+    margin-left: 0; /* Remove margin on the left for smaller screens */
+  }
 
-    ul {
-        margin-left: 0; /* Remove left margin for lists on smaller screens */
-    }
+  ul {
+    margin-left: 0; /* Remove left margin for lists on smaller screens */
+  }
 
-    img {
-        max-width: 100%; /* Make images fill their container on smaller screens */
+  img {
+    max-width: 100%; /* Make images fill their container on smaller screens */
+  }
 
-    }
-
-    body{
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 }
