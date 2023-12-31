@@ -28,12 +28,12 @@ header {
   cursor: pointer;
   font-size: 25px;
   margin-left: 50px;
-  transition: color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
 }
 
 #goBack:hover {
-  font-size: 25.2px;
-  text-decoration: underline;
+  font-size: 27px;
   color: #feb8cf;
 }
 
@@ -223,6 +223,7 @@ img {
   color: #27ac2c;
   font-weight: bold;
   transition: color 0.1s ease;
+  -webkit-transition: color 0.1s ease;
   border-bottom: 2px solid #4caf50;
   padding-top: 10px;
 }
@@ -266,8 +267,20 @@ h5 {
     position: static;
     margin-top: 17%;
     margin-bottom: 25px;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  #goBack {
+    position: relative;
+    left: -40px;
+    width: auto;
+    height: auto;
   }
 
   #data {
