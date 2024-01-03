@@ -258,7 +258,8 @@ h5 {
   }
 
   nav h2 {
-    margin-left: 3%; /* Center the navigation header on smaller screens */
+    margin-left: auto;
+    padding-right: 25px; /* Center the navigation header on smaller screens */
   }
 
   .container {
@@ -278,7 +279,7 @@ h5 {
 
   #goBack {
     position: relative;
-    left: -40px;
+    left: -43px;
     width: auto;
     height: auto;
   }
