@@ -1,0 +1,19 @@
+{
+  "name": "qr-quest-app",
+  "version": "1.0.0",
+  "description": "QR Code Generator App",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumberlark/QR-QUEST-APP.git"
+  },
+  "author": "SteveLarkinDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumberlark/QR-QUEST-APP/issues"
+  },
+  "homepage": "https://github.com/lumberlark/QR-QUEST-APP#readme"
+}
